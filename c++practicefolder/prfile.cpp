@@ -7,8 +7,9 @@
 #include "conditional.cpp"
 
 
+
 int main(){
 	 std::cout << "Area of rectangle is: " << mall(2,3); 
 	 std::cout << "header is: " << check(5,3); 
-	  std::cout << "sdfdsf" << cou(); 
+	// std::cout << "sdfdsf" << cou(); 
 }
