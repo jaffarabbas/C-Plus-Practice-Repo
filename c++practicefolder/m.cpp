@@ -1,5 +1,8 @@
 #include <iostream>
+using namespace std;
 
 int main(){
-     std::cout << "Area of rectangle is: " ;
+     int area;
+     cin >> area;
+     cout << "Area of rectangle is: " << area ;
 }
