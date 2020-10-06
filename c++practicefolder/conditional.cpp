@@ -1,4 +1,5 @@
 #define cond
+#undef cond
 
 #ifdef cond
 int cou(){
