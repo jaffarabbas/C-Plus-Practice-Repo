@@ -1,0 +1,1 @@
+string str5(str2.begin(), str2.begin() + 5); 
