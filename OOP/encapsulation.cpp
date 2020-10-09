@@ -1,4 +1,5 @@
 #include <iostream>
+#include "darklord.cpp"
 using namespace std;
 
 class encap{
@@ -18,8 +19,8 @@ class tester{
     public:
       void show(){
          encap obj;
-         int temp;
-         cin >> temp;
+         int temp = inscn();
+        //  cin >> temp;
          obj.set(temp);
          cout << obj.get() << endl;
       }
