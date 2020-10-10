@@ -44,7 +44,6 @@ int main()
 	// [] operator 
 	char ch = str6.at(2); // Same as "ch = str6[2];" 
 
-
 	cout << "third character of string is : " << ch << endl; 
 
 	// front return first character and back returns last character 
