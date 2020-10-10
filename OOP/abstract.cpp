@@ -65,6 +65,8 @@ class accounts{
           }
           float getTax() {return tax;}
 };
+
+
 int main(int argc, char const *argv[])
 {
     accounts account_1; 
