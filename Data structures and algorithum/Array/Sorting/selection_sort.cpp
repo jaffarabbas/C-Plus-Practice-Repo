@@ -20,10 +20,11 @@ class selection_sort{
            for (j = i + 1; j < size; j++)
            {
                if(arr[j] < arr[min]){//arr[1] < arr[0] = 5 < 4
-                  min = j;//
+                  min = j;//min = 1 , j = 1 
                }   
                swap(&arr[min], &arr[i]);
            }
+             cout << i << endl;
         }  
     }
     public:void print_array(){
