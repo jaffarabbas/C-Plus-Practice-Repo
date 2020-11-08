@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void selectionSort(int a[], int n) {
+void bubblesort(int a[], int n) {
    int i, j, min, temp;
    for (i = 0; i < n - 1; i++) {
       min = i;
@@ -21,7 +21,7 @@ int main() {
    for (i = 0; i < n; i++)
    cout<< a[i] <<" ";
    cout<<endl;
-   selectionSort(a, n);
+   bubblesort(a, n);
    printf("\nSorted array is: \n");
    for (i = 0; i < n; i++)
    cout<< a[i] <<" ";
