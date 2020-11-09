@@ -4,11 +4,11 @@ using namespace std;
 
 void merge(int arr[],int low,int mid,int high){
     int i,j,k;
-  //  int *dyn = &high+1;
+    int *dyn = &high+1;
     i=low;
     j=mid+1;
     k=low;
-    int temp[12];
+    int temp[&dyn];
     while(i<=mid&&j<=high){
         if(arr[i] < arr[j]){
             temp[k] = arr[i];
