@@ -4,11 +4,13 @@ using namespace std;
 
 void merge(int arr[],int low,int mid,int high){
     int i,j,k;
-    int *dyn = &high+1;
+   // int *dyn = &high;
     i=low;
     j=mid+1;
     k=low;
-    int temp[&dyn];
+    // int *temp;
+    // temp = new (nothrow) int[11];
+    int temp[10];
     while(i<=mid&&j<=high){
         if(arr[i] < arr[j]){
             temp[k] = arr[i];
@@ -26,15 +28,16 @@ void merge(int arr[],int low,int mid,int high){
         temp[k] =arr[j];
         k++;j++;
     }
-    for(i=low;i<=high;i++){
-        arr[i] = temp[i];
+    int loop;
+    for(loop=low;loop<=high;loop++){
+        arr[loop] = temp[loop];
     }
 }
 
 void sort(int arr[],int low,int high){
     int mid;
     if(low < high){
-        mid=(low+high)/2;
+        mid=low+(high-low)/2;
         sort(arr,low,mid);
         sort(arr,mid+1,high);
         merge(arr,low,mid,high);
@@ -43,7 +46,8 @@ void sort(int arr[],int low,int high){
 
 void test(){
  int arr[] = { 22, 91, 35, 78, 10, 8, 75, 99, 1, 67 };
-   int n = sizeof(arr)/ sizeof(arr[0]);
+ //sizeof(arr)/ sizeof(arr[0])
+   int n = 10;
    int i=0;
    cout<<"Given array is:"<<endl;
    for (i = 0; i < n; i++)
