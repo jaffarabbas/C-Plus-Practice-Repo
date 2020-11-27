@@ -1,0 +1,3 @@
+"J:\Program\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Stack_In_C__.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\Stack_In_C__.dir/objects.a @CMakeFiles\Stack_In_C__.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Stack_In_C__.dir/objects.a -Wl,--no-whole-archive  -o Stack_In_C__.exe -Wl,--out-implib,libStack_In_C__.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Stack_In_C__.dir\linklibs.rsp
