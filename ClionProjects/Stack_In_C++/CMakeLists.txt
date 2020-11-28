@@ -3,4 +3,4 @@ project(Stack_In_C__)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Stack_In_C__ main.cpp)
+add_executable(Stack_In_C__ main.cpp darklord.h)

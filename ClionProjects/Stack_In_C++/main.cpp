@@ -1,4 +1,5 @@
 #include <iostream>
+#include "darklord.h"
 using namespace std;
 
 #define max 1000
@@ -89,7 +90,7 @@ void test(){
         switch (operater){
             case 'p':
                 cout <<"\t\t\tEnter Number to Push"<< endl;
-                cin >> number;
+                number = inscn();
                 stack.push(number);
                 break;
             case 'o':
