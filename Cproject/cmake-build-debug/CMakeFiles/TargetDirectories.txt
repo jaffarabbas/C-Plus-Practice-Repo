@@ -1,3 +1,0 @@
-J:/Program/Github/C-Plus-Practice-Repo/Cproject/cmake-build-debug/CMakeFiles/Cproject.dir
-J:/Program/Github/C-Plus-Practice-Repo/Cproject/cmake-build-debug/CMakeFiles/edit_cache.dir
-J:/Program/Github/C-Plus-Practice-Repo/Cproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir

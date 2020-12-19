@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+J:/Program/Github/C-Plus-Practice-Repo/Cproject/LinkList/main.c
+stdio.h
+-
+string.h
+-
+
