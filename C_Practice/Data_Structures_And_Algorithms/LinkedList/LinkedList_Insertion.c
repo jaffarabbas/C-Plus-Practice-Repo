@@ -9,7 +9,7 @@ struct Node{
 };
 
 //**************Insert at first**************
-struct Node * insertAtFirst(struct Node *head,int data){
+struct Node * insertAtFirst(struct Node * head,int data){
     struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
     ptr->next = head;
     ptr->data = data;
@@ -22,7 +22,7 @@ struct Node * InsertAtIndex(struct Node *head,int data,int index){
     struct Node * temp = head;
     int count = 0;
     while(count!=index-1){
-        temp = temp->next;
+        temp = temp->next;  
         count++;
     }
     ptr->data = data;
