@@ -39,6 +39,7 @@ const int MX = 100001;
 
 int main() {
     ios_base::sync_with_stdio(0); cin.tie(0);
+    freopen("J:\\Program\\Github\\C-Plus-Practice-Repo\\cses-problems\\filesio\\input.txt", "r", stdin); freopen("J:\\Program\\Github\\C-Plus-Practice-Repo\\cses-problems\\filesio\\output.txt", "w", stdout); 
     ll a;
     cin >> a;
     cout << a << " "; 
