@@ -21,7 +21,7 @@ typedef vector<pi> vpi;
 typedef vector<pl> vpl;
 typedef vector<cd> vcd;
 
-template <class T> using Tree = tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>;
+//template <class T> using Tree = tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>;
 
 #define FOR(i, a, b) for (int i=a; i<(b); i++)
 #define F0R(i, a) for (int i=0; i<(a); i++)
@@ -43,15 +43,9 @@ const int MX = 100001;
 
 int main() {
     ios_base::sync_with_stdio(0); cin.tie(0);
-    freopen("${Task_Name}.in", "r", stdin); freopen("${Task_Name}.out", "w", stdout); 
-    
-    // code here -- use cin and cout. 
-    // ifstream dict("dict.txt"); // for file reading
-    
-    queue<int> q;
-    q.push(300);
-    q.push(90);
-
-    cout << q.front() << endl;
+    freopen("J:\\Program\\Github\\C-Plus-Practice-Repo\\cses-problems\\filesio\\input.txt", "r", stdin); freopen("J:\\Program\\Github\\C-Plus-Practice-Repo\\cses-problems\\filesio\\output.txt", "w", stdout); 
+    int a;
+    cin >> a;
+    cout << a;
     return 0;
 }
