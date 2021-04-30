@@ -44,17 +44,23 @@ const int MX = 100001;
 int main() {
     ios_base::sync_with_stdio(0); cin.tie(0);
     //freopen("filesio\\input.txt", "r", stdin); freopen("filesio\\output.txt", "w", stdout); 
-    ll a;
-    cin >> a;
-    ll arr[a];
-    FOR(i,0,a-1){
-        cin >> arr[i];
+    ll len_vec,vec_item;
+    vl vec;
+    //vector length
+    cin >> len_vec;
+    //filing the vector with the values in the
+    //1 2 3 4 5
+    for(ll i = 0 ; i < len_vec-1 ; ++i){
+        cin >> vec_item;
+        vec.pb(vec_item);
     }
-    FOR(i,1,a){
-        if(i != arr[i]){
-            cout << i;
-            break;
+    sort(all(vec));
+    for(ll j = 1 ; j <= len_vec ; j++){
+        if(vec[j-1] != j){
+            cout << j; 
+            return 0;
         }
     }
+    cout << len_vec;
     return 0;
 }
