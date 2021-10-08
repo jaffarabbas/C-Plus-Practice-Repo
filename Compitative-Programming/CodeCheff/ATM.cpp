@@ -2,21 +2,18 @@
 
 using namespace std;
 
-
-void testCode(){
+int main(){
 	int x;
 	float y;
-	cin >>x>>y;
-	if((x%5==0) && (x+0.5)< y){
-		cout<<y-x-0.5; 
+	cin>>x>>y;
+	if(x%5==0){
+		if((x<y) && ((x+0.5)<=y)){
+			cout<< setprecision (2) << fixed << y-x-0.5; 
+		}else{
+			cout<< setprecision (2) << fixed <<  y;
+		}
 	}else{
-		cout<<y;
+		cout<< setprecision (2) << fixed <<  y;
 	}
-}
-
-int main(){
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	testCode();
 	return 0;
 }
