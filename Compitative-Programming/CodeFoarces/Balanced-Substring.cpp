@@ -42,13 +42,13 @@ void testCode(ll n,string s){
 		cout << "-1 -1"<< "\n";
 	}else{
 		bool flag = false;
-		char ch = s[0];
-		fl(i,n)
+		char ch = s[0];//s = 'aabb';ch = a
+		fl(i,n)//i<4
 		{
-			if(i==0){
+			if(i==0){//i==0//jump krlo
 				continue;
-			}else if(s[i]!=ch){
-				cout <<i<<" "<<i+1<<"\n";
+			}else if(s[i]!=ch){//s[2]:a nahi hai braber a
+				cout <<i<<" "<<i+1<<"\n";// 
 				flag = true;
 				break;	
 			}
