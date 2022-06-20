@@ -7,18 +7,22 @@ using namespace std;
 
 
 int main() {
-    int nrows,nout,n,outrow,outtaker;
+    int nrows,nout,n,s=0,outrow,outtaker;
     cin >> nrows >> nout;
-    for (int i = 0; i < nrows; ++i)
+    int *arr[nrows];
+    while(nrows--)
     {
         cin >> n;
-        int v[nrows];
-        for (int j = 0; j < n; ++j)
+        arr[s] = new int[n];
+        for (int i = 0; i < n; ++i)
         {
-            cin >> v[i][n];
+            cin >> arr[s][i];
         }
+        s++;
+    }
+    while(nout--){
         cin >> outrow >> outtaker;
-        cout << v[nrows];
+        cout << arr[outrow][outtaker] << endl;
     }
     return 0;
 }
