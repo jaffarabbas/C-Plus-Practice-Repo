@@ -2,9 +2,15 @@
 using namespace std;
 
 void test(){
-	int a;
-	cin >> a;
-	cout << (a > 15 ? "NO" :"YES") << "\n";
+	int a,b;
+	cin >> a >> b;
+	float r = a * 1.07;
+	if(b<=r){
+		cout << "YES";
+	}else{
+		cout << "NO";
+	}
+	cout << "\n";
 }
 
 int main() {
