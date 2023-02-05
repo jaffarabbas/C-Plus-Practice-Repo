@@ -14,5 +14,6 @@
         "regex": "cpp",
         "valarray": "cpp"
     },
-    "compile-hero.disable-compile-files-on-did-save-code": false
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "C_Cpp.errorSquiggles": "disabled"
 }
