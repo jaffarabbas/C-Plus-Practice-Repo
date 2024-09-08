@@ -61,10 +61,12 @@ void free_doubly_linked_list(DoublyLinkedListNode* node) {
 }
 
 /*
- * Complete the 'reverse' function below.
+ * Complete the 'sortedInsert' function below.
  *
  * The function is expected to return an INTEGER_DOUBLY_LINKED_LIST.
- * The function accepts INTEGER_DOUBLY_LINKED_LIST llist as parameter.
+ * The function accepts following parameters:
+ *  1. INTEGER_DOUBLY_LINKED_LIST llist
+ *  2. INTEGER data
  */
 
 /*
@@ -78,27 +80,27 @@ void free_doubly_linked_list(DoublyLinkedListNode* node) {
  *
  */
 
-DoublyLinkedListNode* reverse(DoublyLinkedListNode* llist) {
- DoublyLinkedListNode* current = head;
-    DoublyLinkedListNode* temp = nullptr;
-
-    // Traverse the list and swap next and prev pointers
-    while (current != nullptr) {
-        // Swap next and prev
-        temp = current->prev;
-        current->prev = current->next;
-        current->next = temp;
-
-        // Move to the next node in the original list
-        current = current->prev;
+DoublyLinkedListNode* sortedInsert(DoublyLinkedListNode* llist, int data) {
+    DoublyLinkedListNode* newNode = new DoublyLinkedListNode(data);
+    if (llist == nullptr) {
+        return newNode;
     }
-
-    // Update the head to the last node processed
-    if (temp != nullptr) {
-        head = temp->prev;
+    if (data < llist->data) {
+        newNode->next = llist;
+        llist->prev = newNode;
+        return newNode;
     }
-
-    return head;
+    DoublyLinkedListNode* current = llist;
+    while (current->next != nullptr && current->next->data < data) {
+        current = current->next;
+    }
+    newNode->next = current->next;
+    if (current->next != nullptr) {
+        current->next->prev = newNode;
+    }
+    current->next = newNode;
+    newNode->prev = current;
+    return llist;
 }
 
 int main()
@@ -124,7 +126,11 @@ int main()
             llist->insert_node(llist_item);
         }
 
-        DoublyLinkedListNode* llist1 = reverse(llist->head);
+        int data;
+        cin >> data;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        DoublyLinkedListNode* llist1 = sortedInsert(llist->head, data);
 
         print_doubly_linked_list(llist1, " ", fout);
         fout << "\n";
